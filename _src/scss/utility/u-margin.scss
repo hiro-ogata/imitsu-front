@@ -2,21 +2,21 @@
 
 @for $mtNum from 1 through 10 {
   .u-mt#{$mtNum} {
-    margin-top: 5px * $mtNum;
+    margin-top: 5px * $mtNum !important;
   }
 }
 @for $mrNum from 1 through 10 {
   .u-mt#{$mrNum} {
-    margin-top: 5px * $mrNum;
+    margin-top: 5px * $mrNum !important;
   }
 }
 @for $mbNum from 1 through 10 {
   .u-mt#{$mbNum} {
-    margin-top: 5px * $mbNum;
+    margin-top: 5px * $mbNum !important;
   }
 }
 @for $mlNum from 1 through 10 {
   .u-mt#{$mlNum} {
-    margin-top: 5px * $mlNum;
+    margin-top: 5px * $mlNum !important;
   }
 }

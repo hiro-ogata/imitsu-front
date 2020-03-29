@@ -2,21 +2,21 @@
 
 @for $ptNum from 1 through 10 {
   .u-pt#{$ptNum} {
-    padding-top: 5px * $ptNum;
+    padding-top: 5px * $ptNum !important;
   }
 }
 @for $prNum from 1 through 10 {
   .u-pt#{$prNum} {
-    padding-right: 5px * $prNum;
+    padding-right: 5px * $prNum !important;
   }
 }
 @for $pbNum from 1 through 10 {
   .u-pb#{$pbNum} {
-    padding-bottom: 5px * $pbNum;
+    padding-bottom: 5px * $pbNum !important;
   }
 }
 @for $plNum from 1 through 10 {
   .u-pl#{$plNum} {
-    padding-left: 5px * $plNum;
+    padding-left: 5px * $plNum !important;
   }
 }
