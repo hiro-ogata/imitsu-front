@@ -1,12 +1,37 @@
 @charset "UTF-8";
 /* --------フッター-------- */
 .l-footer .footer-logo {
-  padding: 3% 0 3% 0;
+  padding: 3% 0;
   text-align: center;
 }
 
 .l-footer .footer-sitemap {
   background: #2b374e;
+}
+
+.l-footer .footer-sitemap .footer-sitemap-category {
+  width: 150px;
+}
+
+.l-footer .footer-sitemap .footer-sitemap__title {
+  border-bottom: .3px solid #828893;
+  color: #fff;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 3;
+}
+
+.l-footer .footer-sitemap .footer-sitemap__list {
+  margin-top: 1%;
+  padding-left: 1%;
+  line-height: 1;
+  list-style: none;
+}
+
+.l-footer .footer-sitemap .footer-sitemap__link {
+  color: #d1d1d1;
+  font-size: 11px;
+  font-size: 0.6875rem;
 }
 
 .l-footer .footer-nav {
@@ -36,16 +61,25 @@
 }
 
 .l-footer .footer-nav .footer-copyright {
-  -webkit-transform: translateY(-50%);
-  position: relative;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
   color: #d1d1d1;
   font-size: 11px;
   font-size: 0.6875rem;
 }
 
 @media screen and (max-width: 767px) {
+  .l-footer .footer-sitemap .footer-sitemap__title {
+    font-size: 13px;
+    font-size: 3.09524vw;
+  }
+  .l-footer .footer-sitemap .footer-sitemap__link {
+    font-size: 11px;
+    font-size: 2.61905vw;
+  }
   .l-footer .footer-nav .footer-nav__link {
     font-size: 11px;
     font-size: 2.61905vw;
