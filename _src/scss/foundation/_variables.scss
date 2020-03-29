@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+//---------- ブレイクポイント ----------
+$breakPoint: 767px;
+
+//---------- 画像パス ----------
+$imgPath:"../img/";
+
+//---------- サイトデフォルトカラー ----------
+$palettes: (
+    theme: (
+      blue: #195ca5// アイミツブルー
+    ),
+    button: (
+      orange: #ff8900,// 現デザインのCVカラー
+      red: #f14841// 無料訴求のポイントカラー
+    ),
+    background: (
+      gray: #fafafa,
+      blue: #e8eff6
+    )
+);
+
+@function palettes($key, $tone: base) {
+    @return map-get( map-get($palettes, $key), $tone);
+}
+
+// 呼び出し方法
+// color: palettes(button, orange);
+
+// 本多さんから
+// blue：#195CA5　（アイミツブルー,メインコピー,背景など多用）
+// yellow：#FCD434　（昔のCVカラー,ポイント以外は徐々に無くしていく方向）
+// red：#F14841　（無料訴求のポイントカラー）
+// button_orange：#FF8900　（現デザインのCVカラー）
+// bg_gray：#FAFAFA
+// bg_blue：#E8EFF6
+// text_blue：#2B374E
+// text_link_blue：#0089FC

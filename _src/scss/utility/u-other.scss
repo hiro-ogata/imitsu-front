@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+//---------- その他 ----------
+.u-inner {
+	width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+	.u-sp {
+		display: none !important;
+	}
+}
+@media screen and (max-width: 767px){
+	.u-pc {
+		display: none !important;
+	}
+}

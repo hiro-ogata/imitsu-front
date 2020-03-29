@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import "./../foundation/mixin";
+
+.l-header {
+  height: 70px;
+
+  /* ナビ */
+  .header-nav-list {
+    .header-nav-list__item {
+      @include fontSize(12);
+      display: inline-block;
+      padding: 2px 0;
+      margin-left: 16px;
+      float: right;
+    }
+    .header-nav-list__link {
+      display: inline-block;
+      float: right;
+    }
+  }
+
+  /* ロゴ */
+  .header-logo {
+    display: inline-block;
+    float: right;
+  }
+
+  /* キャッチフレーズ */
+  .header-tagline {
+    position: absolute;
+    @include fontSize(12);
+    top: 32px;
+    left: 173px;
+    display: inline-block;
+  }
+
+  /* 電話番号 */
+  .header-tell {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 40px;
+    margin: 0;
+    color: #f14841;
+    font-family: Open Sans,sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* 営業時間 */
+  .header-workday {
+    @include fontSize(11);
+    display: inline-block;
+  }
+
+  /* ボタン */
+  .header-button {
+    .header-button__login {
+      .c-button {
+        float: right;
+      }
+    }
+    .header-button__register {
+      .c-button {
+        float: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}

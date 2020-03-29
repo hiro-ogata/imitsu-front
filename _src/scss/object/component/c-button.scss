@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@import "./../foundation/mixin";
+
+.c-button {
+  border: 1px solid #015ea3;
+  background-color: #fff;
+  color: #46240a;
+  display: inline-block;
+  padding: 8px 16px 8px 26px;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: 1;
+}

@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@for $mtNum from 1 through 10 {
+  .u-mt#{$mtNum} {
+    margin-top: 5px * $mtNum;
+  }
+}
+@for $mrNum from 1 through 10 {
+  .u-mt#{$mrNum} {
+    margin-top: 5px * $mrNum;
+  }
+}
+@for $mbNum from 1 through 10 {
+  .u-mt#{$mbNum} {
+    margin-top: 5px * $mbNum;
+  }
+}
+@for $mlNum from 1 through 10 {
+  .u-mt#{$mlNum} {
+    margin-top: 5px * $mlNum;
+  }
+}

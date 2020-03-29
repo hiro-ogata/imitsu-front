@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@for $ptNum from 1 through 10 {
+  .u-pt#{$ptNum} {
+    padding-top: 5px * $ptNum;
+  }
+}
+@for $prNum from 1 through 10 {
+  .u-pt#{$prNum} {
+    padding-right: 5px * $prNum;
+  }
+}
+@for $pbNum from 1 through 10 {
+  .u-pb#{$pbNum} {
+    padding-bottom: 5px * $pbNum;
+  }
+}
+@for $plNum from 1 through 10 {
+  .u-pl#{$plNum} {
+    padding-left: 5px * $plNum;
+  }
+}

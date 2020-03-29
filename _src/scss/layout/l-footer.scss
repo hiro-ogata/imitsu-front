@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "./../foundation/mixin";
+
+/* --------フッター-------- */
+.l-footer {
+  .footer-logo {
+    text-align: center;
+    padding: 3% 0 3% 0;
+  }
+  .footer-sitemap {
+    background: #2b374e;
+  }
+  .footer-nav {
+    padding: 0 0 12% 0;
+    background: #15223a;
+    position: relative;
+    .footer-nav__list {
+      padding-top: 3%;
+      margin: auto;
+      text-align: center;
+      width: 600px;
+    }
+    .footer-nav__item {
+      display: inline-block;
+    }
+    .footer-nav__link {
+      display: inline-block;
+      margin: 10px;
+      line-height: .3;
+      @include fontSize(11);
+      color: #d1d1d1;
+    }
+    
+    .footer-copyright {
+      @include topAndBottomCenter;
+      @include fontSize(11);
+      color: #d1d1d1;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}

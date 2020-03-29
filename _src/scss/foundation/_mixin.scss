@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+//---------- フォントサイズ ----------
+// ※ Android4.4未満を考慮してpx指定も記載
+@mixin fontSize($fontSize, $baseSize: 16) {
+  font-size: $fontSize + px;
+  font-size: ($fontSize / $baseSize) + rem;
+  @media screen and (max-width: 767px) {
+    font-size: $fontSize * 1px;
+    font-size: getVw($fontSize);
+  }
+}
+@function getVw($fontSize, $viewport:420) {
+  $rate: 100 / $viewport;
+  @return $rate * $fontSize * 1vw;
+}
+
+//---------- 中央寄せ ----------
+@mixin positionAbsoluteImg($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  margin: auto;
+}
+
+//---------- 透明度 ----------
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacityIE: $opacity * 100;
+  filter: alpha(opacity=$opacityIE);
+}
+
+//---------- 円形 ----------
+@mixin circle($size) {
+   width: $size+px;
+   height: $size+px;
+   border-radius: 50%;
+}
+
+//---------- 天地中央配置 ----------
+@mixin topAndBottomCenter {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+//---------- アニメーション ----------
+@mixin keyframes($animationName) {
+  @-webkit-keyframes $name {
+    @content;
+  }
+  @-moz-keyframes $name {
+    @content;
+  }
+  @keyframes $name {
+    @content;
+  }
+}
+@mixin animation($animationName) {
+  -webkit-animation: $animationName;
+  -moz-animation: $animationName;
+  animation: $animationName;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+//---------- スマホサイズの時 ----------
+@mixin mediaSp {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+//---------- float時に使う用（念のため） ----------
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

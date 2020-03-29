@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "./mixin";
+
+/*---------- 基本 ----------*/
+html {
+	body, form {
+		margin: 0;
+		padding: 0;
+	}
+	img {
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		pointer-events: none;
+	}
+	a {
+    color: #0089fc;
+    text-decoration: none;
+		cursor: pointer;
+		&:link {}
+		&:hover {
+			color: #3d83a5 !important;
+			text-decoration: underline !important;
+		}
+		&:visited {}
+		&:active {}
+	}
+}
