@@ -77,75 +77,6 @@ html a:hover {
 
 /*---------- base SP ----------*/
 /*---------- フォーム部品 ----------*/
-/* -------- header PC -------- */
-.l-header {
-  height: 72px;
-  /* ナビ */
-  /* ロゴ */
-  /* キャッチフレーズ */
-  /* 電話番号 */
-  /* 営業時間 */
-  /* ボタン */
-}
-
-.l-header .u-inner {
-  position: relative;
-}
-
-.l-header .header-nav-list .header-nav-list__item {
-  display: inline-block;
-  margin-left: 16px;
-  padding: 2px 0;
-  float: right;
-  font-size: 12px;
-  font-size: 0.75rem;
-}
-
-.l-header .header-nav-list .header-nav-list__link {
-  display: inline-block;
-  float: right;
-}
-
-.l-header .header-logo {
-  position: absolute;
-  top: 50%;
-  left: 0;
-}
-
-.l-header .header-tagline {
-  position: absolute;
-  top: 100%;
-  left: 200px;
-  font-size: 12px;
-  font-size: 0.75rem;
-}
-
-.l-header .header-tell {
-  display: inline-block;
-  top: -2px;
-  left: 40px;
-  margin: 0;
-  color: #f14841;
-  font-family: Open Sans,sans-serif;
-  font-size: 27px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.l-header .header-workday {
-  display: inline-block;
-  font-size: 11px;
-  font-size: 0.6875rem;
-}
-
-.l-header .header-button .header-button__login .c-button {
-  float: right;
-}
-
-.l-header .header-button .header-button__register .c-button {
-  float: right;
-}
-
 /* -------- footer PC -------- */
 .l-footer .footer-logo {
   padding: 3% 0;
@@ -218,8 +149,77 @@ html a:hover {
   font-size: 0.6875rem;
 }
 
-/* -------- header SP -------- */
 /* -------- footer SP -------- */
+/* -------- header PC -------- */
+.l-header {
+  height: 72px;
+  /* ナビ */
+  /* ロゴ */
+  /* キャッチフレーズ */
+  /* 電話番号 */
+  /* 営業時間 */
+  /* ボタン */
+}
+
+.l-header .u-inner {
+  position: relative;
+}
+
+.l-header .header-nav-list .header-nav-list__item {
+  display: inline-block;
+  margin-left: 16px;
+  padding: 2px 0;
+  float: right;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.l-header .header-nav-list .header-nav-list__link {
+  display: inline-block;
+  float: right;
+}
+
+.l-header .header-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.l-header .header-tagline {
+  position: absolute;
+  top: 100%;
+  left: 200px;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.l-header .header-tell {
+  display: inline-block;
+  top: -2px;
+  left: 40px;
+  margin: 0;
+  color: #f14841;
+  font-family: Open Sans,sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.l-header .header-workday {
+  display: inline-block;
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+
+.l-header .header-button .header-button__login .c-button {
+  float: right;
+}
+
+.l-header .header-button .header-button__register .c-button {
+  float: right;
+}
+
+/* -------- header SP -------- */
 .c-button {
   display: inline-block;
   padding: 8px 16px 8px 26px;
@@ -580,18 +580,6 @@ html a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .l-header .header-nav-list .header-nav-list__item {
-    font-size: 12px;
-    font-size: 2.85714vw;
-  }
-  .l-header .header-tagline {
-    font-size: 12px;
-    font-size: 2.85714vw;
-  }
-  .l-header .header-workday {
-    font-size: 11px;
-    font-size: 2.61905vw;
-  }
   .l-footer .footer-sitemap .footer-sitemap__title {
     font-size: 13px;
     font-size: 3.09524vw;
@@ -607,6 +595,21 @@ html a:hover {
   .l-footer .footer-nav .footer-copyright {
     font-size: 11px;
     font-size: 2.61905vw;
+  }
+  .l-header .header-nav-list .header-nav-list__item {
+    font-size: 12px;
+    font-size: 2.85714vw;
+  }
+  .l-header .header-tagline {
+    font-size: 12px;
+    font-size: 2.85714vw;
+  }
+  .l-header .header-workday {
+    font-size: 11px;
+    font-size: 2.61905vw;
+  }
+  .c-return-top {
+    display: none;
   }
   .u-pc {
     display: none !important;

@@ -20,7 +20,7 @@ const editDir = {
   scss: './_src/scss/*/',
   js: './_src/js/',
   img: './_src/img/',
-  project: './_src/scss/object/project/'
+  page: './_src/scss/object/page/'
 }
 const destDir = {
   css: './src/css',
@@ -61,7 +61,7 @@ gulp.task("othercss", function () {
 
 /*---------- css結合 ----------*/
 gulp.task("joincss", function() {
-  return gulp.src([destDir.css + 'style.css', editDir.project + hoge])
+  return gulp.src([destDir.css + 'style.css', editDir.page + hoge])
   .pipe(concat(hoge + '.css'))
   .pipe(gulp.dest(destDir.css));
 });

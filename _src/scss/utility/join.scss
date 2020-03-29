@@ -6,15 +6,11 @@
 @import "./../foundation/forms.scss";
 
 ////////// layout層 //////////
-@import "./../layout/l-header_pc.scss";
-@import "./../layout/l-footer_pc.scss";
-@import "./../layout/l-header_sp.scss";
-@import "./../layout/l-footer_sp.scss";
+@import "./../layout/*.scss";
 
 ////////// object層 //////////
-@import "./../object/component/c-button.scss";
-@import "./../object/component/c-return-top.scss";
-@import "./../object/project/p-top.scss";
+@import "./../object/component/*.scss";
+@import "./../object/page/*.scss";
 
 ////////// utility層 //////////
 @import "./../utility/u-margin.scss";

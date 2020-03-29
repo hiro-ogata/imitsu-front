@@ -68,6 +68,8 @@
   float: right;
 }
 
+/* -------- header SP -------- */
+
 @media screen and (max-width: 767px) {
   .l-header .header-nav-list .header-nav-list__item {
     font-size: 12px;

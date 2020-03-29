@@ -70,6 +70,8 @@
   font-size: 0.6875rem;
 }
 
+/* -------- footer SP -------- */
+
 @media screen and (max-width: 767px) {
   .l-footer .footer-sitemap .footer-sitemap__title {
     font-size: 13px;
