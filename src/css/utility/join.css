@@ -220,7 +220,6 @@ html a:hover {
 
 /* -------- header SP -------- */
 /* -------- footer SP -------- */
-
 .c-button {
   display: inline-block;
   padding: 8px 16px 8px 26px;
@@ -608,9 +607,6 @@ html a:hover {
   .l-footer .footer-nav .footer-copyright {
     font-size: 11px;
     font-size: 2.61905vw;
-  }
-  .l-footer {
-    color: red;
   }
   .u-pc {
     display: none !important;

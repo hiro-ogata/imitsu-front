@@ -3,8 +3,7 @@
 @import "./../foundation/variables";
 
 /* -------- header SP -------- */
-@media screen and (max-width: 767px) {
+@include mediaSp {
   .l-header {
-
   }
 }
