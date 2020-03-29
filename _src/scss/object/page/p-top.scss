@@ -1,9 +1,10 @@
 @charset "utf-8";
+@import "./../foundation/mixin";
+@import "./../foundation/variables";
 
 .p-top {
 
 }
-
 
 @include mediaSp {
   .p-top {
