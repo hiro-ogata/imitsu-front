@@ -1,8 +1,13 @@
 @charset "utf-8";
 @import "./../foundation/mixin";
+@import "./../foundation/variables";
 
+/* -------- header PC -------- */
 .l-header {
   height: 72px;
+  .u-inner {
+    position: relative;
+  }
 
   /* ナビ */
   .header-nav-list {
@@ -21,16 +26,17 @@
 
   /* ロゴ */
   .header-logo {
-    display: inline-block;
-    float: right;
+    position: absolute;
+    top: 50%;
+    left: 0;
   }
 
   /* キャッチフレーズ */
   .header-tagline {
     @include fontSize(12);
-    top: 32px;
-    left: 173px;
-    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 200px;
   }
 
   /* 電話番号 */
@@ -65,8 +71,4 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 767px) {
-
 }

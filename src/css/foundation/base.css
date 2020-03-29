@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/*---------- 基本 ----------*/
+/*---------- base PC ----------*/
 html body, html form {
   margin: 0;
   padding: 0;
@@ -23,3 +22,5 @@ html a:hover {
   color: #3d83a5 !important;
   text-decoration: underline !important;
 }
+
+/*---------- base SP ----------*/

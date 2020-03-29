@@ -1,6 +1,6 @@
 @charset "utf-8";
-
 @import "./../foundation/mixin";
+@import "./../foundation/variables";
 
 .c-button {
   border: 1px solid #015ea3;
@@ -11,4 +11,7 @@
   border-radius: 3px;
   font-weight: 700;
   line-height: 1;
+  @include mediaSp {
+
+  }
 }

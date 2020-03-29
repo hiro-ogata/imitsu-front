@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* -------- header PC -------- */
 .l-header {
   height: 72px;
   /* ナビ */
@@ -7,6 +8,10 @@
   /* 電話番号 */
   /* 営業時間 */
   /* ボタン */
+}
+
+.l-header .u-inner {
+  position: relative;
 }
 
 .l-header .header-nav-list .header-nav-list__item {
@@ -24,14 +29,15 @@
 }
 
 .l-header .header-logo {
-  display: inline-block;
-  float: right;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .l-header .header-tagline {
-  display: inline-block;
-  top: 32px;
-  left: 173px;
+  position: absolute;
+  top: 100%;
+  left: 200px;
   font-size: 12px;
   font-size: 0.75rem;
 }

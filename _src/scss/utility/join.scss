@@ -6,9 +6,10 @@
 @import "./../foundation/forms.scss";
 
 ////////// layout層 //////////
-@import "./../layout/l-header.scss";
-@import "./../layout/l-footer.scss";
-@import "./../layout/l-sidebar.scss";
+@import "./../layout/l-header_pc.scss";
+@import "./../layout/l-footer_pc.scss";
+@import "./../layout/l-header_sp.scss";
+@import "./../layout/l-footer_sp.scss";
 
 ////////// object層 //////////
 @import "./../object/component/c-button.scss";

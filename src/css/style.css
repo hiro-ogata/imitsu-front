@@ -50,7 +50,7 @@ table {
   border-spacing: 0;
 }
 
-/*---------- 基本 ----------*/
+/*---------- base PC ----------*/
 html body, html form {
   margin: 0;
   padding: 0;
@@ -75,7 +75,9 @@ html a:hover {
   text-decoration: underline !important;
 }
 
+/*---------- base SP ----------*/
 /*---------- フォーム部品 ----------*/
+/* -------- header PC -------- */
 .l-header {
   height: 72px;
   /* ナビ */
@@ -84,6 +86,10 @@ html a:hover {
   /* 電話番号 */
   /* 営業時間 */
   /* ボタン */
+}
+
+.l-header .u-inner {
+  position: relative;
 }
 
 .l-header .header-nav-list .header-nav-list__item {
@@ -101,14 +107,15 @@ html a:hover {
 }
 
 .l-header .header-logo {
-  display: inline-block;
-  float: right;
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
 .l-header .header-tagline {
-  display: inline-block;
-  top: 32px;
-  left: 173px;
+  position: absolute;
+  top: 100%;
+  left: 200px;
   font-size: 12px;
   font-size: 0.75rem;
 }
@@ -139,7 +146,7 @@ html a:hover {
   float: right;
 }
 
-/* --------フッター-------- */
+/* -------- footer PC -------- */
 .l-footer .footer-logo {
   padding: 3% 0;
   text-align: center;
@@ -211,7 +218,9 @@ html a:hover {
   font-size: 0.6875rem;
 }
 
-/* --------Retinaディスプレイ-------- */
+/* -------- header SP -------- */
+/* -------- footer SP -------- */
+
 .c-button {
   display: inline-block;
   padding: 8px 16px 8px 26px;
@@ -599,6 +608,9 @@ html a:hover {
   .l-footer .footer-nav .footer-copyright {
     font-size: 11px;
     font-size: 2.61905vw;
+  }
+  .l-footer {
+    color: red;
   }
   .u-pc {
     display: none !important;

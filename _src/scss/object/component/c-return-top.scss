@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "./../foundation/mixin";
+@import "./../foundation/variables";
 
 .c-return-top {
   display: block;
@@ -19,4 +20,10 @@
   line-height: 1.2;
   right: 30px;
   bottom: 30px;
+}
+
+@include mediaSp {
+  .c-return-top {
+
+  }
 }
