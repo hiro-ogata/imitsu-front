@@ -3,11 +3,11 @@
 @import "./../foundation/variables";
 
 .p-top {
-
+  height: 500px;
+  background: #eee;
 }
 
 @include mediaSp {
   .p-top {
-
   }
 }
