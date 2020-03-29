@@ -2,7 +2,7 @@
 @import "./../foundation/mixin";
 
 .l-header {
-  height: 70px;
+  height: 72px;
 
   /* ナビ */
   .header-nav-list {
@@ -27,7 +27,6 @@
 
   /* キャッチフレーズ */
   .header-tagline {
-    position: absolute;
     @include fontSize(12);
     top: 32px;
     left: 173px;
@@ -37,7 +36,6 @@
   /* 電話番号 */
   .header-tell {
     display: inline-block;
-    position: absolute;
     top: -2px;
     left: 40px;
     margin: 0;

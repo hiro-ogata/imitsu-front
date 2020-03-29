@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .l-header {
-  height: 70px;
+  height: 72px;
   /* ナビ */
   /* ロゴ */
   /* キャッチフレーズ */
@@ -30,7 +30,6 @@
 
 .l-header .header-tagline {
   display: inline-block;
-  position: absolute;
   top: 32px;
   left: 173px;
   font-size: 12px;
@@ -39,7 +38,6 @@
 
 .l-header .header-tell {
   display: inline-block;
-  position: absolute;
   top: -2px;
   left: 40px;
   margin: 0;

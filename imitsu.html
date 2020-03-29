@@ -54,12 +54,14 @@
   <div style="height: 500px; background: #eee;"></div>
   <!-- コンテンツ部分 ここまで -->
 
-  <!-- twig使う場合はこれ1個をパーツにする -->
+  <!-- twig使う場合はこれ1個をパーツにする listタグはループ処理 -->
   <footer class="l-footer">
     <div class="footer-sitemap u-pc">
       <div class="u-inner">
         <div class="footer-logo">
-          <a href="/"><img src="https://image.imitsu.jp/v2/common/logo/logo_imitsu_white.png" alt="アイミツ" width="114.75" height="29.835"></a>
+          <a href="/">
+            <img src="https://image.imitsu.jp/v2/common/logo/logo_imitsu_white.png" alt="アイミツ" width="114.75" height="29.835">
+          </a>
         </div>
         <div class="footer-sitemap__category">
           <h3 class="footer-sitemap__title">タイトル</h3>
@@ -80,6 +82,9 @@
         </div>
       </div>
     </div>
+    <!-- twigパーツ ここまで -->
+
+    <!-- twig使う場合はこれ1個をパーツにする -->
     <div class="footer-nav">
       <div class="u-inner">
         <ul class="footer-nav__list">
