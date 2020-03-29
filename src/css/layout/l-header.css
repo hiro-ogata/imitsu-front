@@ -1,0 +1,80 @@
+@charset "UTF-8";
+.l-header {
+  height: 70px;
+  /* ナビ */
+  /* ロゴ */
+  /* キャッチフレーズ */
+  /* 電話番号 */
+  /* 営業時間 */
+  /* ボタン */
+}
+
+.l-header .header-nav-list .header-nav-list__item {
+  display: inline-block;
+  margin-left: 16px;
+  padding: 2px 0;
+  float: right;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.l-header .header-nav-list .header-nav-list__link {
+  display: inline-block;
+  float: right;
+}
+
+.l-header .header-logo {
+  display: inline-block;
+  float: right;
+}
+
+.l-header .header-tagline {
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  left: 173px;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.l-header .header-tell {
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  left: 40px;
+  margin: 0;
+  color: #f14841;
+  font-family: Open Sans,sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.l-header .header-workday {
+  display: inline-block;
+  font-size: 11px;
+  font-size: 0.6875rem;
+}
+
+.l-header .header-button .header-button__login .c-button {
+  float: right;
+}
+
+.l-header .header-button .header-button__register .c-button {
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .l-header .header-nav-list .header-nav-list__item {
+    font-size: 12px;
+    font-size: 2.85714vw;
+  }
+  .l-header .header-tagline {
+    font-size: 12px;
+    font-size: 2.85714vw;
+  }
+  .l-header .header-workday {
+    font-size: 11px;
+    font-size: 2.61905vw;
+  }
+}

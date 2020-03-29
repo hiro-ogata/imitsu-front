@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*---------- 基本 ----------*/
+html body, html form {
+  margin: 0;
+  padding: 0;
+}
+
+html img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+html a {
+  color: #0089fc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html a:hover {
+  color: #3d83a5 !important;
+  text-decoration: underline !important;
+}
