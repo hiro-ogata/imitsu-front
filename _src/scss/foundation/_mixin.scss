@@ -14,7 +14,7 @@
   $rate: 100 / $viewport;
   @return $rate * $fontSize * 1vw;
 }
-// ※ Android4.4未満を考慮してpx指定も記載
+// ※ vw単位の対応していない、Android4.4未満を考慮してpx指定も記載
 
 //---------- 中央寄せ ----------
 @mixin positionAbsoluteImg($top: auto, $right: auto, $bottom: auto, $left: auto) {
@@ -28,15 +28,16 @@
 
 //---------- 透明度 ----------
 @mixin opacity($opacity) {
-  opacity: $opacity;
   $opacityIE: $opacity * 100;
+  opacity: $opacity;
   filter: alpha(opacity=$opacityIE);
+  -ms-filter: alpha(opacity=$opacityIE);
 }
 
 //---------- 円形 ----------
 @mixin circle($size) {
-   width: $size+px;
-   height: $size+px;
+   width: $size + px;
+   height: $size + px;
    border-radius: 50%;
 }
 
@@ -77,7 +78,7 @@
   }
 }
 
-//---------- float時に使う用（念のため） ----------
+//---------- float時に使う用（多分不要かも） ----------
 @mixin clearfix {
   &::after {
     content: "";

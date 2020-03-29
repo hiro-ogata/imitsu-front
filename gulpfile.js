@@ -89,7 +89,7 @@ gulp.task('minimg', function() {
 
 /*---------- task実行 ----------*/
 gulp.task('default', gulp.series(function(done){
-  gulp.watch(editDir.scss + '*.scss', gulp.series('css', 'mincss', 'othercss'));
+  gulp.watch([editDir.scss + '*.scss', './_src/scss/*/*/*.scss'], gulp.series('css', 'mincss', 'othercss'));
   gulp.watch([editDir.js + '*.js', !editDir.js + '*.min.js'], gulp.series('js', 'minjs'));
   gulp.watch([editDir.img + '*.png', editDir.img + '*.jpg'], gulp.series('minimg'));
   // gulp.watch(editDir.project + hoge + '*.scss', gulp.series('joincss'));

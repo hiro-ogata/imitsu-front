@@ -3,20 +3,18 @@
 @import "./../foundation/variables";
 
 .c-return-top {
+  @include circle(100);
+  @include opacity(.7);
   display: block;
   position: fixed;
-  width: 100px;
-  height: 100px;
   padding-top: 27px;
   box-sizing: border-box;
-  border-radius: 50px;
   background: #000;
   color: #fff;
   font-size: 14px;
   text-align: center;
   transition-duration: .25s;
-  opacity: .7;
-  z-index: 5000;
+  z-index: 10;
   line-height: 1.2;
   right: 30px;
   bottom: 30px;
