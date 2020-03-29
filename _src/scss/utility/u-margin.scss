@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+//---------- u-margin ----------
 @for $mtNum from 1 through 10 {
   .u-mt#{$mtNum} {
     margin-top: 5px * $mtNum !important;

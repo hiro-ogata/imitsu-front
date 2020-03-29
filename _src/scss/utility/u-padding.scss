@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+//---------- u-padding ----------
 @for $ptNum from 1 through 10 {
   .u-pt#{$ptNum} {
     padding-top: 5px * $ptNum !important;
