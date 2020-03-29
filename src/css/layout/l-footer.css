@@ -48,11 +48,11 @@
 
 .l-footer .footer-nav .footer-nav__item {
   display: inline-block;
+  margin: 1%;
 }
 
 .l-footer .footer-nav .footer-nav__link {
   display: inline-block;
-  margin: 10px;
   color: #d1d1d1;
   font-size: 11px;
   font-size: 0.6875rem;
@@ -88,5 +88,15 @@
   .l-footer .footer-nav .footer-copyright {
     font-size: 11px;
     font-size: 2.61905vw;
+  }
+  .l-footer .footer-nav {
+    padding: 0 0 25% 0;
+  }
+  .l-footer .footer-nav .footer-nav__list {
+    width: auto;
+  }
+  .l-footer .footer-nav .footer-copyright {
+    width: 100%;
+    text-align: center;
   }
 }

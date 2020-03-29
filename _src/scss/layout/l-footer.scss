@@ -42,10 +42,10 @@
     }
     .footer-nav__item {
       display: inline-block;
+      margin: 1%;
     }
     .footer-nav__link {
       display: inline-block;
-      margin: 10px;
       line-height: .3;
       @include fontSize(11);
       color: #d1d1d1;
@@ -61,5 +61,34 @@
 /* -------- footer SP -------- */
 @include mediaSp {
   .l-footer {
+    .footer-logo {
+    }
+    .footer-sitemap {
+      .footer-sitemap-category {
+      }
+      .footer-sitemap__title {
+      }
+      .footer-sitemap__list {
+      }
+      .footer-sitemap__link {
+      }
+    }
+    .footer-nav {
+      padding: 0 0 25% 0;
+      .footer-nav__list {
+        width: auto;
+
+      }
+      .footer-nav__item {
+
+      }
+      .footer-nav__link {
+
+      }
+      .footer-copyright {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }

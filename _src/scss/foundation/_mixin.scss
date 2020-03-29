@@ -9,7 +9,7 @@
     font-size: getVw($fontSize);
   }
 }
-@function getVw($fontSize, $viewport:420) {
+@function getVw($fontSize, $viewport: 420) {
   $rate: 100 / $viewport;
   @return $rate * $fontSize * 1vw;
 }
