@@ -5,13 +5,12 @@
 .c-return-top {
   @include circle(100);
   @include opacity(.7);
-  display: block;
+  @include fontSize(14);
   position: fixed;
   padding-top: 27px;
   box-sizing: border-box;
   background: #000;
   color: #fff;
-  font-size: 14px;
   text-align: center;
   transition-duration: .25s;
   z-index: 10;

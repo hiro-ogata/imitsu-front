@@ -60,11 +60,11 @@ gulp.task("othercss", function () {
 });
 
 /*---------- css結合 ----------*/
-gulp.task("joincss", function() {
-  return gulp.src([destDir.css + 'style.css', editDir.page + hoge])
-  .pipe(concat(hoge + '.css'))
-  .pipe(gulp.dest(destDir.css));
-});
+// gulp.task("joincss", function() {
+//   return gulp.src([destDir.css + 'style.css', editDir.page + hoge])
+//   .pipe(concat(hoge + '.css'))
+//   .pipe(gulp.dest(destDir.css));
+// });
 
 /*---------- js圧縮 ----------*/
 gulp.task('js', function() {
