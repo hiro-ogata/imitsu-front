@@ -14,7 +14,6 @@
   $rate: 100 / $viewport;
   @return $rate * $fontSize * 1vw;
 }
-// ※ vw単位の対応していない、Android4.4未満を考慮してpx指定も記載
 
 //---------- 中央寄せ ----------
 @mixin positionAbsoluteImg($top: auto, $right: auto, $bottom: auto, $left: auto) {

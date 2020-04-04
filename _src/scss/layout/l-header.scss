@@ -8,68 +8,6 @@
   .u-inner {
     position: relative;
   }
-  /* ナビ */
-  .header-nav-list {
-    .header-nav-list__item {
-      @include fontSize(12);
-      display: inline-block;
-      padding: 2px 0;
-      margin-left: 16px;
-      float: right;
-    }
-    .header-nav-list__link {
-      display: inline-block;
-      float: right;
-    }
-  }
-
-  /* ロゴ */
-  .header-logo {
-    position: absolute;
-    top: 50%;
-    left: 0;
-  }
-
-  /* キャッチフレーズ */
-  .header-tagline {
-    @include fontSize(12);
-    position: absolute;
-    top: 100%;
-    left: 200px;
-  }
-
-  /* 電話番号 */
-  .header-tell {
-    display: inline-block;
-    top: -2px;
-    left: 40px;
-    margin: 0;
-    color: #f14841;
-    font-family: Open Sans,sans-serif;
-    font-size: 27px;
-    font-weight: 600;
-    white-space: nowrap;
-  }
-
-  /* 営業時間 */
-  .header-workday {
-    @include fontSize(11);
-    display: inline-block;
-  }
-
-  /* ボタン */
-  .header-button {
-    .header-button__login {
-      .c-button {
-        float: right;
-      }
-    }
-    .header-button__register {
-      .c-button {
-        float: right;
-      }
-    }
-  }
 }
 
 /* -------- header SP -------- */

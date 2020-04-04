@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import "./../foundation/mixin";
+@import "./../foundation/variables";
+
+/* -------- header PC -------- */
+.header-nav-list {
+  .header-nav-list__item {
+    @include fontSize(12);
+    display: inline-block;
+    padding: 2px 0;
+    margin-left: 16px;
+    float: right;
+  }
+  .header-nav-list__link {
+    display: inline-block;
+    float: right;
+  }
+}
+
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.header-tagline {
+  @include fontSize(12);
+  position: absolute;
+  top: 100%;
+  left: 200px;
+}
+
+.header-tell {
+  display: inline-block;
+  top: -2px;
+  left: 40px;
+  margin: 0;
+  color: #f14841;
+  font-family: Open Sans,sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.header-workday {
+  @include fontSize(11);
+  display: inline-block;
+}
+
+.header-button {
+  .header-button__login {
+    .c-button {
+      float: right;
+    }
+  }
+  .header-button__register {
+    .c-button {
+      float: right;
+    }
+  }
+}
+
+
+/* -------- header SP -------- */
+@include mediaSp {
+
+}
