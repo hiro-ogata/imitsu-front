@@ -9,5 +9,5 @@ class Person {
   }
 }
 
-let kokona = new Person('Kokona', 'Mt.Takao');
+let kokona = new Person('AAA', 'BBB');
 kokona.climb();

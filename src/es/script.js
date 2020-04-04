@@ -25,5 +25,5 @@ var Person = /*#__PURE__*/function () {
   return Person;
 }();
 
-var kokona = new Person('Kokona', 'Mt.Takao');
+var kokona = new Person('AAA', 'BBB');
 kokona.climb();
