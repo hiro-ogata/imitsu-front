@@ -15,7 +15,15 @@
   @return $rate * $fontSize * 1vw;
 }
 
-//---------- 中央寄せ ----------
+//---------- 文末の3点リーダー ----------
+@mixin ellipsis($lineNum) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lineNum;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+//---------- 画像位置指定 ----------
 @mixin positionAbsoluteImg($top: auto, $right: auto, $bottom: auto, $left: auto) {
   position: absolute;
   top: $top;
@@ -38,15 +46,6 @@
    width: $size + px;
    height: $size + px;
    border-radius: 50%;
-}
-
-//---------- 天地中央配置 ----------
-@mixin topAndBottomCenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 //---------- アニメーション ----------

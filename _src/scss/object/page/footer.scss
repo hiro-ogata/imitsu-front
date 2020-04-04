@@ -3,6 +3,10 @@
 @import "./../foundation/variables";
 
 /* -------- footer PC -------- */
+.footer-logo {
+  text-align: center;
+  padding: 3% 0;
+}
 .footer-sitemap {
   background: #2b374e;
   .footer-sitemap-category {
@@ -46,7 +50,6 @@
     color: #d1d1d1;
   }
   .footer-copyright {
-    @include topAndBottomCenter();
     @include fontSize(11);
     color: #d1d1d1;
   }

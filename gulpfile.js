@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 const sass = require('gulp-sass');
 const sassGlob = require('gulp-sass-glob');
 const postcss = require("gulp-postcss");
@@ -19,12 +20,14 @@ const bulkSass = require('gulp-sass-bulk-import');
 const editDir = {
   scss: './_src/scss/*/',
   js: './_src/js/',
+  es: './_src/es/',
   img: './_src/img/',
   page: './_src/scss/object/page/'
 }
 const destDir = {
   css: './src/css',
   js: './src/js',
+  es: './src/es',
   img: './src/img'
 }
 const cssPlugin = [
@@ -59,13 +62,6 @@ gulp.task("othercss", function () {
   .pipe(gulp.dest(destDir.css));
 });
 
-/*---------- css結合 ----------*/
-// gulp.task("joincss", function() {
-//   return gulp.src([destDir.css + 'style.css', editDir.page + hoge])
-//   .pipe(concat(hoge + '.css'))
-//   .pipe(gulp.dest(destDir.css));
-// });
-
 /*---------- js圧縮 ----------*/
 gulp.task('js', function() {
   return gulp.src(editDir.js + '*.js')
@@ -87,17 +83,31 @@ gulp.task('minimg', function() {
   .pipe(gulp.dest(destDir.img));
 });
 
+/*---------- ECMAScript ----------*/
+gulp.task('es', function() {
+  return gulp.src(editDir.es + '*.js')
+  .pipe(babel({presets: ['@babel/preset-env']}))
+  .pipe(gulp.dest(destDir.es));
+});
+gulp.task('mines', function() {
+  return gulp.src(editDir.es + '*.js')
+  .pipe(babel({presets: ['@babel/preset-env']}))// babel.config.js
+  .pipe(uglify({output: {comments: 'some'}}))// 圧縮時コメント残す設定
+  .pipe(rename({extname: '.min.js'}))
+  .pipe(gulp.dest(destDir.es));
+});
+
 /*---------- task実行 ----------*/
 gulp.task('default', gulp.series(function(done){
   gulp.watch([editDir.scss + '*.scss', './_src/scss/*/*/*.scss'], gulp.series('css', 'mincss', 'othercss'));
-  gulp.watch([editDir.js + '*.js', !editDir.js + '*.min.js'], gulp.series('js', 'minjs'));
+  gulp.watch([editDir.js + '*.js'], gulp.series('js', 'minjs'));
+  gulp.watch([editDir.es + '*.js'], gulp.series('es', 'mines'));
   gulp.watch([editDir.img + '*.png', editDir.img + '*.jpg'], gulp.series('minimg'));
-  // gulp.watch(editDir.project + hoge + '*.scss', gulp.series('joincss'));
   done();
 }));
 
 
-// コマンドラインから引数で渡してやってみるのいいかも
+// コマンドラインから引数で渡して出力CSSを変えるの悪くない
 // const minimist = require('minimist');
 // const options = minimist(process.argv.slice(2), {
 // 	string: 'env',
@@ -107,10 +117,12 @@ gulp.task('default', gulp.series(function(done){
 // });
 // const hoge = options.env;
 
-
+// webpackと両立も悪くない
 // const webpackStream = require("webpack-stream");
 // const webpack = require("webpack");
 // const webpackConfig = require("./webpack.config");
+
+// ブラウザシンクの設定が難しい
 // var browsersync = require("browser-sync").create();
 // /*---------- 自動リロード ----------*/
 // gulp.task('reload', function (done){

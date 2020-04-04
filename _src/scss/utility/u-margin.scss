@@ -1,23 +1,23 @@
 @charset "utf-8";
 
 //---------- u-margin ----------
-@for $mtNum from 1 through 10 {
+@for $mtNum from 1 through 3 {
   .u-mt#{$mtNum} {
-    margin-top: 5px * $mtNum !important;
+    margin-top: 1% * $mtNum !important;
   }
 }
-@for $mrNum from 1 through 10 {
-  .u-mt#{$mrNum} {
-    margin-top: 5px * $mrNum !important;
+@for $mrNum from 1 through 3 {
+  .u-mr#{$mrNum} {
+    margin-right: 1% * $mrNum !important;
   }
 }
-@for $mbNum from 1 through 10 {
-  .u-mt#{$mbNum} {
-    margin-top: 5px * $mbNum !important;
+@for $mbNum from 1 through 3 {
+  .u-mb#{$mbNum} {
+    margin-bottom: 1% * $mbNum !important;
   }
 }
-@for $mlNum from 1 through 10 {
-  .u-mt#{$mlNum} {
-    margin-top: 5px * $mlNum !important;
+@for $mlNum from 1 through 3 {
+  .u-ml#{$mlNum} {
+    margin-left: 1% * $mlNum !important;
   }
 }

@@ -2,13 +2,12 @@
 @import "./../foundation/mixin";
 @import "./../foundation/variables";
 
-/* -------- footer PC -------- */
-.l-footer {
+.p-cost {
+  height: 500px;
+  background: #eee;
 }
 
-/* -------- footer SP -------- */
 @include mediaSp {
-  .l-footer {
-
+  .p-cost {
   }
 }

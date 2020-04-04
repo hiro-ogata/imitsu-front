@@ -1,23 +1,23 @@
 @charset "utf-8";
 
 //---------- u-padding ----------
-@for $ptNum from 1 through 10 {
+@for $ptNum from 1 through 3 {
   .u-pt#{$ptNum} {
-    padding-top: 5px * $ptNum !important;
+    padding-top: 1% * $ptNum !important;
   }
 }
-@for $prNum from 1 through 10 {
-  .u-pt#{$prNum} {
-    padding-right: 5px * $prNum !important;
+@for $prNum from 1 through 3 {
+  .u-pr#{$prNum} {
+    padding-right: 1% * $prNum !important;
   }
 }
-@for $pbNum from 1 through 10 {
+@for $pbNum from 1 through 3 {
   .u-pb#{$pbNum} {
-    padding-bottom: 5px * $pbNum !important;
+    padding-bottom: 1% * $pbNum !important;
   }
 }
-@for $plNum from 1 through 10 {
+@for $plNum from 1 through 3 {
   .u-pl#{$plNum} {
-    padding-left: 5px * $plNum !important;
+    padding-left: 1% * $plNum !important;
   }
 }
