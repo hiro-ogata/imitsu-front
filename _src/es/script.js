@@ -1,4 +1,5 @@
-// sample
+let sample = "aa";
+
 class Person {
   constructor(name, mt) {
     this.name = name;
