@@ -43,9 +43,9 @@
 
 //---------- 円形 ----------
 @mixin circle($size) {
-   width: $size + px;
-   height: $size + px;
-   border-radius: 50%;
+  width: $size + px;
+  height: $size + px;
+  border-radius: 50%;
 }
 
 //---------- アニメーション ----------
@@ -67,6 +67,20 @@
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+//---------- CSSスプライト つかったことないので研究しておく ----------
+// gulpでいろいろできる
+// http://blog.manaten.net/entry/270
+// http://cly7796.net/wp/other/to-create-a-css-sprite-gulp/
+@mixin sprite($image, $x, $y, $width, $height) {
+  width:  $width;
+  height: $height;
+  display: block;
+  overflow: hidden;
+  background: $image $x*-1 $y*-1 no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
 //---------- スマホサイズの時 ----------
