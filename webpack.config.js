@@ -1,21 +1,24 @@
-module.exports = {
-  entry: './index.js',
-  output: {
-    path: __dirname + './_webpackTest/dist',
-    filename: 'bundle.js'
-  },
+// コマンド
+// npm run build -- --env.page=top
 
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-        query: {
-          presets: ['es2015']
-          }
-        }
-      }
-    ]
+module.exports = env => {
+  const entries = ['./_src/index.js'];
+
+  // ページ毎にCSSを出力できるよう、分岐処理を作成 04月12日
+  switch (env.page) {
+    case "top":
+      console.log("top");
+      break;
+    case "list":
+      console.log("list");
+      break;
+    case "cost":
+      console.log("cost");
+      break;
+    default:
   }
+
+  return {
+    entry: entries,
+  };
 };

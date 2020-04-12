@@ -26,5 +26,5 @@ var Person = /*#__PURE__*/function () {
   return Person;
 }();
 
-var kokona = new Person('AAA', 'BBB');
+var kokona = new Person('CCCCC', 'BBB');
 kokona.climb();

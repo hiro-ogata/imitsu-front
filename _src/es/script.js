@@ -10,5 +10,5 @@ class Person {
   }
 }
 
-let kokona = new Person('AAA', 'BBB');
+let kokona = new Person('CCCCC', 'BBB');
 kokona.climb();
