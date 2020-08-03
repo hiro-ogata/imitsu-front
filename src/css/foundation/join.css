@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*---------- join ----------*/
 /*---------- Eric Meyer’s “Reset CSS” 2.0 ----------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -249,14 +250,6 @@ html a:hover {
   display: inline-block;
   font-size: 11px;
   font-size: 0.6875rem;
-}
-
-.header-button .header-button__login .c-button {
-  float: right;
-}
-
-.header-button .header-button__register .c-button {
-  float: right;
 }
 
 /* -------- header SP -------- */

@@ -15,7 +15,7 @@
   @return $rate * $fontSize * 1vw;
 }
 
-//---------- 文末の3点リーダー ----------
+//---------- 3点リーダー ----------
 @mixin ellipsis($lineNum) {
   display: -webkit-box;
   -webkit-line-clamp: $lineNum;
