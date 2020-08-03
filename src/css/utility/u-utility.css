@@ -1,0 +1,26 @@
+.u-inner {
+  width: 96%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+.u-topAndBottomCenter {
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .u-sp {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .u-pc {
+    display: none !important;
+  }
+}
